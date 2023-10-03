@@ -1,1 +1,9 @@
 @import 'src/styles.scss';
+
+.nav-right-items {
+    margin-left: auto;
+
+    span {
+        margin-left: 40px;
+    }   
+}
