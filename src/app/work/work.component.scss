@@ -1,0 +1,64 @@
+$primary-color: black;
+$secondary-color: #2e0099;
+$background-color: black;
+$font-color: #333;
+
+.container {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+
+  .company-title {
+    h2 {
+      color: $primary-color;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .about {
+    p, li {
+      color: $font-color;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    li {
+        text-align: left;
+    }
+  }
+
+  .main-skills {
+    display: flex;
+    justify-content: space-around;
+
+    .roles, .stack {
+      h3 {
+        color: $primary-color;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      span {
+        background-color: $secondary-color;
+        border-radius: 20px;
+        color: white;
+        display: inline-block;
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 5px;
+      }
+    }
+  }
+}
