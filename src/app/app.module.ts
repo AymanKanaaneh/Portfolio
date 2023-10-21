@@ -13,6 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
+import { WorkComponent } from './work/work.component';
 
 
 
@@ -21,7 +22,8 @@ import { SkillsComponent } from './skills/skills.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    WorkComponent,
   ],
   imports: [
     BrowserModule,
