@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -24,6 +25,7 @@ import { WorkComponent } from './work/work.component';
     HomeComponent,
     SkillsComponent,
     WorkComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
