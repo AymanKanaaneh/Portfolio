@@ -5,9 +5,27 @@
     </div>
 
     <div class="nav-right-items">
-        <span>Home</span>
-        <span>Skills</span>
-        <span>Work</span>
-        <span>Contact</span>
+        <div class="desktop-display">
+            <a (click)="scrollTo('home')" href="#home"><span>Home</span></a>
+            <a (click)="scrollTo('skills')" href="#skills"><span>Skills</span></a>
+            <a (click)="scrollTo('work')" href="#work"><span>Work</span></a>
+            <a (click)="scrollTo('contact')" href="#contact"><span>Contact</span></a>
+        </div>
+
+        <div class="phone-display">
+            <mat-menu #appMenu="matMenu">
+                <button (click)="scrollTo('home')" mat-menu-item>Home</button>
+                <button (click)="scrollTo('skills')" mat-menu-item>Skills</button>
+                <button (click)="scrollTo('work')" mat-menu-item>Work</button>
+                <button (click)="scrollTo('contact')" mat-menu-item>Contact</button>
+            </mat-menu>
+              
+            <button mat-icon-button [matMenuTriggerFor]="appMenu">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+
     </div>
+    
+    
 </mat-toolbar>
