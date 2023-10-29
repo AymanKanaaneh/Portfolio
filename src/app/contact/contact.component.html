@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="wrapper">
+    <div class="wrapper" [formGroup]="form">
         <div class="title">
             <h3>Let’s Discuss Your Project</h3>
             <p>Always available for freelancing if the right project comes along, Feel free to contact me.</p>
@@ -7,26 +7,26 @@
         <div class="wrapper-form">
             <div class="fullName form-group">
                 <label class="form-label">Full name</label>
-                <input name="Name" id="name" placeholder="Name *" type="text" class="form-control">
+                <input formControlName="from_name" name="Name" id="name" placeholder="Name *" type="text" class="form-control">
             </div>
             <div class="email form-group">
                 <label class="form-label">Your Email</label>
-                <input name="Email" id="email" placeholder="Email *" type="email" class="form-control">
+                <input formControlName="from_email" name="Email" id="email" placeholder="Email *" type="email" class="form-control">
             </div>
             <div class="subject form-group">
                 <label class="form-label">Subject</label>
-                <input name="Subject" id="subject" placeholder="Subject *" type="text" class="form-control">
+                <input formControlName="subject"  name="Subject" id="subject" placeholder="Subject *" type="text" class="form-control">
             </div>
             <div class="message form-group">
                 <label class="form-label">Your message</label>
-                <textarea name="message" id="message" placeholder="Your message *"></textarea>
+                <textarea formControlName="message" name="message" id="message" placeholder="Your message *"></textarea>
             </div>
             <div class="send">
-                <button type="button" value="Send">Send Message</button>
+                <button (click)="send()" type="button" value="Send">Send Message</button>
             </div>
             <div class="contact-info-in">
                 <label>write an e-mail</label>
-                <a href="mailto:ayman.kanaaneh@gmai.com">ayman.kanaaneh@gmai.com</a>
+                <a href="mailto:ayman.kanaaneh@gmai.com">ayman.kanaaneh@gmail.com</a>
             </div>
             <div class="social-icon">
                 <a href="javascript:" class="linkedin"><i></i></a>
