@@ -12,7 +12,7 @@ export class ContactComponent {
   form: FormGroup = this.fb.group({
     from_name: '',
     to_name: 'Admin',
-    from_email: 'ayman.kanaaneh@gmail.com',
+    from_email: '',
     subject: '',
     message: ''
   });
