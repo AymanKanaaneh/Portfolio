@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Skill, skillsData } from '../../assets/skillsData';
 
 @Component({
   selector: 'app-skills',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-
+  skills: Skill[] = skillsData;
 }

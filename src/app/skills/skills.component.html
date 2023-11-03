@@ -1,92 +1,10 @@
 <div class="content__container">
     <div class="content__container__list">
-        <div class="content__container__list__item">
-            <span>TypeScript</span>
-            <mat-progress-bar class="custom-progress-bar" mode="determinate" value="97" color="red"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>JavaScript</span>
-            <mat-progress-bar mode="determinate" value="97"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Angular</span>
-            <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Git & GitHub</span>
-            <mat-progress-bar class="custom-progress-bar" mode="determinate" value="95" color="red"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Html</span>
-            <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>SCSS</span>
-            <mat-progress-bar class="custom-progress-bar" mode="determinate" value="80" color="red"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>CSS</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>RxJs</span>
-            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>NgRx</span>
-            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Cypress</span>
-            <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>RESTful APIs</span>
-            <mat-progress-bar mode="determinate" value="95"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>NestJS</span>
-            <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>NodeJS</span>
-            <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Express</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>MongoDB</span>
-            <mat-progress-bar mode="determinate" value="75"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>SQL</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Selenium</span>
-            <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Java</span>
-            <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>C#</span>
-            <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>Python</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>C</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
-        <div class="content__container__list__item">
-            <span>C++</span>
-            <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </div>
+        <div *ngFor="let skill of skills">
+            <div class="content__container__list__item">
+              <span>{{ skill.name }}</span>
+              <mat-progress-bar mode="determinate" [value]="skill.value"></mat-progress-bar>
+            </div>
+          </div>
     </div>
 </div>
