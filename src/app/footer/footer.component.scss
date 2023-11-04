@@ -1,0 +1,44 @@
+.footer {
+    background-color: black;
+    color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 70px; /* Adjust the logo size as needed */
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icon {
+    color: #fff;
+    font-size: 32px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.footer-social .social-icon:hover {
+    color: #007bff;
+}
+
+.footer{
+    &-text{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    &-copyright{
+        i {
+            position: relative;
+            top: 1px;
+        }
+        font-size: 14px;
+    }
+}
