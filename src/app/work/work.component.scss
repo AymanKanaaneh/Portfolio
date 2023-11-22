@@ -28,15 +28,18 @@ $font-color: #333;
 
   .about {
 
+    @media screen and (max-width: 600px) {
+      ul {
+        padding-left: 1em;
+      }
+    }
+
     p,
     li {
       color: $font-color;
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
-    }
-
-    li {
       text-align: left;
     }
   }
