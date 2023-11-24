@@ -6,18 +6,20 @@
 
     <div class="nav-right-items">
         <div class="desktop-display">
-            <a #home (click)="scrollTo('home')" href="#home"><span>Home</span></a>
-            <a (click)="scrollTo('skills')" href="#skills"><span>Skills</span></a>
-            <a (click)="scrollTo('work')" href="#work"><span>Work</span></a>
-            <a (click)="scrollTo('contact')" href="#contact"><span>Contact</span></a>
+            <a autofocus href="#home"><span>Home</span></a>
+            <a href="#skills"><span>Skills</span></a>
+            <a href="#work"><span>Work</span></a>
+            <a href="#blog"><span>Blog</span></a>
+            <a href="#contact"><span>Contact</span></a>
         </div>
 
         <div class="phone-display">
             <mat-menu #appMenu="matMenu">
-                <button (click)="scrollTo('home')" mat-menu-item>Home</button>
-                <button (click)="scrollTo('skills')" mat-menu-item>Skills</button>
-                <button (click)="scrollTo('work')" mat-menu-item>Work</button>
-                <button (click)="scrollTo('contact')" mat-menu-item>Contact</button>
+                <a href="#home"><button mat-menu-item>Home</button></a>
+                <a href="#skills"><button mat-menu-item>Skills</button></a>
+                <a href="#work"><button mat-menu-item>Work</button></a>
+                <a href="#blog"><button mat-menu-item>Blog</button></a>
+                <a href="#contact"><button mat-menu-item>Contact</button></a>
             </mat-menu>
               
             <button mat-icon-button [matMenuTriggerFor]="appMenu">
