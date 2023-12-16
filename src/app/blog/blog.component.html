@@ -1,1 +1,32 @@
-<p>blog works!</p>
+<div class="blog-container">
+    <div class="filter-bar">
+      <select class="form-control" [(ngModel)]="selectedTag" (change)="filterBlogs()">
+        <option value="" selected>All</option>
+        <option *ngFor="let tag of getAllTags()" [value]="tag">{{ tag }}</option>
+      </select>
+      <input type="text" class="form-control" placeholder="Search Blogs" [(ngModel)]="searchTerm" (input)="filterBlogs()">
+    </div>
+  
+    <div class="row">
+      <div *ngFor="let blog of blogs" class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="blog-card" (click)="blogClicked(blog)">
+          <div class="card">
+            <img [src]="blog.imageUrl" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+              <h2 class="card-title">{{ blog.title }}</h2>
+              <div class="wrapper-card-text">
+                <p class="card-text">{{ blog.content }}</p>
+              </div>
+              <div class="card-stamp">
+                <p class="card-subtitle text-muted">Published on: {{ blog.date | date }}</p>
+                <div class="tags">
+                  <span *ngFor="let tag of blog.tags" class="tag">{{ tag }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
