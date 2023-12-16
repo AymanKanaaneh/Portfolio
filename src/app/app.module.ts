@@ -20,6 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -32,6 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     WorkComponent,
     ContactComponent,
     FooterComponent,
+    AboutComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

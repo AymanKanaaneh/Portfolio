@@ -6,11 +6,11 @@
   height: 160px;
   overflow:hidden;
   
-  font-family: 'Lato', sans-serif;
+  font-family: cursive;
   font-size: 27px;
   line-height: 40px;
   color: #ecf0f1;
-  
+
   &__container {
     font-weight: 600;
     overflow: hidden;
@@ -45,6 +45,7 @@
     }
 
     &__text {
+      font-family: cursive;
       display: inline;
       float: left;
       margin: 0;
@@ -55,12 +56,14 @@
 
     &__list {
       margin-top: 0;
-      padding-left: 80px;
+      padding-left: 120px;
       text-align: left;
       list-style: none;
+      width: 100%;
       @media (max-width: 1000px) {
         font-size: 17px;
-        width: 170px;
+        padding-left: 80px;
+        width: 250px;
       }
       
       -webkit-animation-name: change;
@@ -138,10 +141,10 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 160px;
+  height: 130px;
   overflow:hidden;
   
-  font-family: 'Lato', sans-serif;
+  font-family: cursive;
   font-size: 27px;
   line-height: 40px;
   color: #ecf0f1;
@@ -159,7 +162,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
   span{
-    font-family: 'Lato', sans-serif;
+    font-family: cursive;
     font-size: 20px;
     line-height: 40px;
     color: black;

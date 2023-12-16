@@ -1,21 +1,16 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements AfterViewInit{
+export class HeaderComponent {
 
-  @ViewChild('home', { static: true }) homeElement!: ElementRef<HTMLElement>;
-  @Output() scroll = new EventEmitter<string>();
-  
-  ngAfterViewInit(): void {
-    this.homeElement.nativeElement.focus();
+  constructor(private router: Router) {}
+
+  navigateTo(route: string): void {
+    this.router.navigate([route]);
   }
-
-  scrollTo(value: string){
-    this.scroll.emit(value);
-  }
-
 }
