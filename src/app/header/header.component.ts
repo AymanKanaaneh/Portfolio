@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,9 +8,19 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
+  blogClicked = false;
   constructor(private router: Router) {}
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
+    this.blogClicked = true;
   }
+
+
+  navItemClick(event: HTMLAnchorElement): void {
+    this.router.navigate(['/']);
+    event.focus();
+    this.blogClicked = false;
+  }
+
 }

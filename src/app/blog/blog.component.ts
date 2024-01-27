@@ -19,28 +19,28 @@ export class BlogComponent implements OnInit {
       title: 'Capturing the Essence of Adventure: A Travel Photography Journey',
       content: 'Join me on a visual journey as I share the stories behind my most memorable travel photographs and the incredible experiences that inspired them.',
       date: new Date('2023-02-10'),
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM16qFuAjs_lEUgdWRK76dY3mbJtfM8QvV5DuuMjCcLviSAwswaKHC8Fr19Dp4FQGxOjY&usqp=CAU',
+      imageUrl: 'https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-firefly-marquee-text-to-image-0-desktop-1000x1000?$pjpeg$&jpegSize=300&wid=1000',
       tags: ['Travel', 'Photography']
     },
     {
       title: 'Delicious and Nutritious: A Beginner’s Guide to Healthy Cooking',
       content: 'Discover simple and tasty recipes that promote a healthy lifestyle in this cooking adventure. Explore the world of nutritious ingredients and cooking techniques.',
       date: new Date('2023-03-20'),
-      imageUrl: 'https://example.com/healthy-cooking-blog-image.jpg',
+      imageUrl: 'https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-firefly-marquee-text-to-image-0-desktop-1000x1000?$pjpeg$&jpegSize=300&wid=1000',
       tags: ['Cooking', 'Healthy Living']
     },
     {
       title: 'Exploring Other Worlds: A Dive into Science Fiction Literature',
       content: 'Embark on a journey through the realms of imagination with this exploration of classic and modern science fiction novels. Dive into captivating stories and visionary ideas.',
       date: new Date('2023-04-15'),
-      imageUrl: 'https://example.com/sci-fi-literature-blog-image.jpg',
+      imageUrl: 'https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-firefly-marquee-text-to-image-0-desktop-1000x1000?$pjpeg$&jpegSize=300&wid=1000',
       tags: ['Books', 'Science Fiction']
     },
     {
       title: 'Unlocking Your Fitness Potential: Tips for a Healthier Lifestyle',
       content: 'Get motivated and achieve your fitness goals with these practical tips and insights. Learn about effective workout routines, nutrition, and overall well-being.',
       date: new Date('2023-05-12'),
-      imageUrl: 'https://example.com/fitness-tips-blog-image.jpg',
+      imageUrl: 'https://cc-prod.scene7.com/is/image/CCProdAuthor/adobe-firefly-marquee-text-to-image-0-desktop-1000x1000?$pjpeg$&jpegSize=300&wid=1000',
       tags: ['Fitness', 'Health']
     }
     // Add more blog posts as needed
@@ -53,6 +53,7 @@ export class BlogComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scroll(0,0);
   }
 
   filterBlogs(): void {
@@ -78,6 +79,6 @@ export class BlogComponent implements OnInit {
   }
 
   blogClicked(blog: Blog){
-    alert('d');
+    alert('Under Construction !!!');
   }
 }

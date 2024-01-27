@@ -22,13 +22,26 @@
         padding-bottom: 10px;
     }
 
+    .blogClicked {
+        outline: none;
+        text-decoration: underline #ecf0f1 5px;
+        text-underline-offset: 7px;
+    }
+
     a {
         text-decoration: none;
         cursor: pointer;
 
-        &:focus {
+        &:hover {
             outline: none;
             text-decoration: underline #ecf0f1 5px;
+            text-underline-offset: 7px;
+        }
+        
+        &:focus-within {
+            outline: none;
+            text-decoration: underline #ecf0f1 5px;
+            text-underline-offset: 7px;
         }
     }
 }
